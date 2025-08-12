@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch문</title>
+  </head>
+  <body>
+    <script>
+      // 변수의 값이 과일(fruit)인지 야채(vegetable)인지 알려주는 조건문
+      let food = "melon";
+      let vegetable = "carrot";
+      switch (vegetable) {
+        case "melon":
+          console.log("fruit");
+          break;
+        case "apple":
+          console.log("fruit1");
+          break;
+        case "carrot":
+          console.log("vegetable");
+          break;
+        //   아무것도 일치하지 않을 때
+        default:
+          console.log("과일도 아니고 채소도 아니다.");
+          break;
+      }
+      //   실행결과 : "fruit"가 나온다. switch에 food를 넣었기에 실행이 되었다.
+      // 조건에 맞는 것이 실행이 된다.
+
+      // if 문과 조건식
+      let score = 90;
+      if (score >= 90 && score <= 100) {
+        console.log("A++ 학점");
+      }else{
+        console.log("A++학점이 아닙니다. 좀 더 노력하세요.");
+      }
+    </script>
+  </body>
+</html>

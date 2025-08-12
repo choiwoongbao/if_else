@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch 문 예제</title>
+  </head>
+  <body>
+    <script>
+      //   숫자로 계산하려면 문자열 → 숫자 변환이 필요하기에 parseInt를 사용해준다.
+    //   문자 입력 할 때는 prompt, 숫자 입력 parseInt(prompt)
+      let score = parseInt(prompt("점수를 입력하세요."));
+      let grade;
+      switch (true) {
+        case score >= 90:
+          grade = "A";
+          break;
+        case score >= 80:
+          grade = "B";
+          break;
+        case score >= 70:
+          grade = "C";
+          break;
+        case score >= 60:
+          grade = "D";
+          break;
+        default:
+          grade = "F";
+      }
+    //   변수나 표현식을 문자열 안에 쉽게 넣고 싶을 때 혹은
+    //   문자 + 숫자 같이 결과를 만들고 싶을 때 → 변수를 써야 한다.
+      console.log(`당신의 학점 : ${grade} `);
+    </script>
+  </body>
+</html>

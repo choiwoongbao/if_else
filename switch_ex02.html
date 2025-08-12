@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch 문 예제</title>
+  </head>
+  <body>
+    <script>
+      let site = prompt(
+        "네이버,구글,유튜브 / 즐겨 사용하는 포털 검색 사이트는?"
+      );
+      let = site;
+      switch (site) {
+        case "네이버":
+          url = "wwww.naver.com";
+          break;
+        case "구글":
+          url = "www.google.com";
+          break;
+        case "유튜브":
+          url = "www.youtube.com";
+          break;
+        default:
+            // 위 세 개의 사이트를 적지 않고 다른 사이트를 적었을 시 나오는 화면
+          alert("보기에 없는 사이트 입니다.");
+      }
+    //   console.log(url);
+
+    // 알림창에 원하는 사이트를 입력했을 때
+      if (url) {
+        window.open(`http://${url}`, "blank");
+      }
+    </script>
+  </body>
+</html>
